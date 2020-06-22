@@ -1,0 +1,25 @@
+extends layout
+
+block content
+  h5 What your name
+  form(method='post', action='/',enctype='multipart/form-data')
+   .form-group
+   label FirstName
+   input.form-control(type='text', name='Firstname', placeholder='First Name')
+   br
+   label LastName
+   .form-group
+   input.form-control(type='text', name='lastname', placeholder='Last Name')
+   h5 And your Gender
+   button.btn.btn-outline-primary.form-control(type='button', checked='') Male
+   &nbsp;
+   &nbsp;  
+   button.btn.btn-outline-secondary.form-control(type='button') Female
+   br     
+   h5  What&apos;s your date of birth?     
+   h8  This can&apos;t be be changed later     
+   br
+   input.form-control(type='date', name='birthday')        
+   br          
+   br            
+  input.form-control(type='submit', name='submit',value='next')
